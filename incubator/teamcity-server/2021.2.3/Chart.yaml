@@ -1,0 +1,27 @@
+apiVersion: v2
+appVersion: "2021.2.3"
+dependencies:
+- name: common
+  repository: https://truecharts.org
+  version: 9.1.2
+deprecated: false
+description: Powerful continuous integration for DevOps-centric teams
+home: https://github.com/truecharts/apps/tree/master/charts/stable/teamcity-server
+icon: 
+keywords:
+- Development
+kubeVersion: '>=1.16.0-0'
+maintainers:
+- email: info@truecharts.org
+  name: TrueCharts
+  url: https://truecharts.org
+name: teamcity-server
+sources:
+- https://www.jetbrains.com/teamcity/
+type: application
+version: 2021.2.3
+annotations:
+  truecharts.org/catagories: |
+    - development
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U

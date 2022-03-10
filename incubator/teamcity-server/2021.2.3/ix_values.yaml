@@ -1,0 +1,20 @@
+image:
+  repository: jetbrains/teamcity-server
+  pullPolicy: IfNotPresent
+  tag: 2021.2.3@sha256:1cc075a30b3f6ba5a43eec77c2dff1f52db97ecdf7f941b95684e73f066e7f1d
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+  allowPrivilegeEscalation: true
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      http:
+        port: 8111
+        targetPort: 8111
